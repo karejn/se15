@@ -23,11 +23,11 @@ public class SmellyClass {
 
         }
 
-        String msg = "Rechnung: \n";
+        StringBuilder msg = new StringBuilder("Rechnung: \n");
         for (Item item : order.getItems()) {
-            msg += item.getName()+": "+item.getPrice() + "\n";
+            msg.append(item.getName()).append(": ").append(item.getPrice()).append("\n");
         }
-        msg += "Total: " + totalPrice;
+        msg.append("Total: ").append(totalPrice);
         System.out.println(msg);
     }
 }
