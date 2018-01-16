@@ -33,6 +33,6 @@ public class Order {
     }
 
     public void addShippingCost(double cost){
-        this.getItems().add(new Item(99l,cost,"Porto und Versand"));
+        this.getItems().add(new Item((long)99,cost,"Porto und Versand"));
     }
 }
