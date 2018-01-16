@@ -1,6 +1,14 @@
 package at.aau.se15.bsp2;
 
-public class Person {
+
+public abstract class Person {
+
+    Person(String vorname, String nachname, Integer alter) {
+        this.vorname = vorname;
+        this.nachname = nachname;
+        this.alter = alter;
+    }
+
     public void setVorname(String vorname) {
         this.vorname = vorname;
     }
@@ -13,12 +21,7 @@ public class Person {
         this.alter = alter;
     }
 
-    public void setBeruf(BERUF beruf) {
-        this.beruf = beruf;
-    }
-
     public String getVorname() {
-
         return vorname;
     }
 
@@ -30,34 +33,13 @@ public class Person {
         return alter;
     }
 
-    public BERUF getBeruf() {
-        return beruf;
-    }
-
 
     private String vorname;
     private String nachname;
     private Integer alter;
-    private BERUF beruf;
-
-
-    public enum BERUF {
-        ENTWICKLER,
-        ARCHITEKT,
-        TESTER
-    }
 
 
     public String getJobBeschreibung() {
-        switch (beruf) {
-            case ENTWICKLER:
-                return "Entwickelt Code.";
-            case ARCHITEKT:
-                return "Designed die Architektur des Projekts.";
-            case TESTER:
-                return "Testet Code.";
-            default:
-                return "";
-        }
+        return "";
     }
 }
