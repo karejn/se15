@@ -13,7 +13,7 @@ public class Person {
         this.alter = alter;
     }
 
-    public void setBeruf(String beruf) {
+    public void setBeruf(BERUF beruf) {
         this.beruf = beruf;
     }
 
@@ -50,7 +50,7 @@ public class Person {
         return alter;
     }
 
-    public String getBeruf() {
+    public BERUF getBeruf() {
         return beruf;
     }
 
@@ -77,18 +77,24 @@ public class Person {
     private String vorname;
     private String nachname;
     private Integer alter;
-    private String beruf;
+    private BERUF beruf;
     private String bevorzugteProgrammierSprache;
     private String ide;
     private boolean datenbanken;
     private String feld;
     private String bevorzugtesTestFramework;
 
+    public enum BERUF {
+        ENTWICKLER,
+        ARCHITEKT,
+        TESTER
+    }
+
     public String getJobBeschreibung() {
         switch(beruf) {
-            case "Entwickler": return "Entwickelt Code.";
-            case "Architekt": return "Designed die Architektur des Projekts.";
-            case "Tester": return "Testet Code.";
+            case ENTWICKLER: return "Entwickelt Code.";
+            case ARCHITEKT: return "Designed die Architektur des Projekts.";
+            case TESTER: return "Testet Code.";
             default: return "";
         }
     }
