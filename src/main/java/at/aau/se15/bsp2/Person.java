@@ -21,7 +21,7 @@ public class Person {
         this.bevorzugteProgrammierSprache = bevorzugteProgrammierSprache;
     }
 
-    public void setIde(String ide) {
+    public void setIde(IDE ide) {
         this.ide = ide;
     }
 
@@ -58,7 +58,7 @@ public class Person {
         return bevorzugteProgrammierSprache;
     }
 
-    public String getIde() {
+    public IDE getIde() {
         return ide;
     }
 
@@ -79,7 +79,7 @@ public class Person {
     private Integer alter;
     private BERUF beruf;
     private String bevorzugteProgrammierSprache;
-    private String ide;
+    private IDE ide;
     private boolean datenbanken;
     private String feld;
     private String bevorzugtesTestFramework;
@@ -88,6 +88,12 @@ public class Person {
         ENTWICKLER,
         ARCHITEKT,
         TESTER
+    }
+
+    public enum IDE {
+        ECLIPSE,
+        INTELLIJ,
+        NANO
     }
 
     public String getJobBeschreibung() {
