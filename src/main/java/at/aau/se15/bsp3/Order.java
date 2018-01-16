@@ -1,3 +1,5 @@
+//01561035 Königstorfer
+
 package at.aau.se15.bsp3;
 
 import java.util.List;
