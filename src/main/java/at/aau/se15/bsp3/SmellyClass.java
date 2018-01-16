@@ -11,19 +11,16 @@ public class SmellyClass {
         }
 
         //check for shipping costs
+
         if(totalPrice<=100) {
-            Item item = new Item();
-            item.setId(99l);
-            item.setName("Porto und Versand");
             if(totalPrice>90) {
-                item.setPrice(totalPrice*0.05);
+                order.getItems().add(new Item(99l,totalPrice*0.05,"Porto und Versand"));
             } else if(totalPrice>50) {
-                item.setPrice(7.5d);
+                order.getItems().add(new Item(99l,7.5d,"Porto und Versand"));
             } else {
-                item.setPrice(10d);
+                order.getItems().add(new Item(99l,10.d,"Porto und Versand"));
             }
 
-            order.getItems().add(item);
         }
 
         String msg = "Rechnung: \n";
