@@ -26,8 +26,6 @@ public class SmellyClass {
             order.getItems().add(item);
         }
 
-        totalPrice=0.0d;
-
         String msg = "Rechnung: \n";
         for (Item item : order.getItems()) {
             msg += item.getName()+": "+item.getPrice() + "\n";
