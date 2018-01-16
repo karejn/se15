@@ -27,12 +27,10 @@ public class SmellyClass {
         }
 
         totalPrice=0.0d;
-        for (Item item : order.getItems()) {
-            totalPrice+=item.getPrice();
-        }
 
         System.out.println("Rechnung:");
         for (Item item : order.getItems()) {
+            totalPrice+=item.getPrice();
             System.out.println(item.getName()+": "+item.getPrice());
         }
         System.out.println("Total: "+totalPrice);
