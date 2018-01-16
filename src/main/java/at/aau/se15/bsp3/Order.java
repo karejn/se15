@@ -31,4 +31,8 @@ public class Order {
     public void setItems(List<Item> items) {
         this.items = items;
     }
+
+    public void addShippingCost(double cost){
+        this.getItems().add(new Item(99l,cost,"Porto und Versand"));
+    }
 }

@@ -14,11 +14,11 @@ public class SmellyClass {
 
         if(totalPrice<=100) {
             if(totalPrice>90) {
-                order.getItems().add(new Item(99l,totalPrice*0.05,"Porto und Versand"));
+                order.addShippingCost(totalPrice*0.05);
             } else if(totalPrice>50) {
-                order.getItems().add(new Item(99l,7.5d,"Porto und Versand"));
+                order.addShippingCost(7.5d);
             } else {
-                order.getItems().add(new Item(99l,10.d,"Porto und Versand"));
+                order.addShippingCost(10d);
             }
 
         }
