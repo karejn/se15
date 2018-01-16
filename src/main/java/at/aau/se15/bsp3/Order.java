@@ -24,7 +24,7 @@ public class Order {
         this.customer = customer;
     }
 
-    public List<Item> getItems() {
+    List<Item> getItems() {
         return items;
     }
 
@@ -32,7 +32,7 @@ public class Order {
         this.items = items;
     }
 
-    public void addShippingCost(double cost){
+    void addShippingCost(double cost){
         this.getItems().add(new Item((long)99,cost,"Porto und Versand"));
     }
 }
