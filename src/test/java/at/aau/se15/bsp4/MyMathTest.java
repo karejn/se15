@@ -11,10 +11,11 @@ public class MyMathTest {
     public void x() {
         Double x=10d;
         Double y=5d;
-        Double add=new MyMath().add(x,y);
-        Double sub=new MyMath().sub(x,y);
-        Double mul=new MyMath().mul(x,y);
-        Double div=new MyMath().div(x,y);
+        MyMath myMath = new MyMath();
+        Double add=myMath.add(x,y);
+        Double sub=myMath.sub(x,y);
+        Double mul=myMath.mul(x,y);
+        Double div=myMath.div(x,y);
 
         assertTrue(add.equals(new Double(15)));
         assertTrue(sub.equals(new Double(5)));
