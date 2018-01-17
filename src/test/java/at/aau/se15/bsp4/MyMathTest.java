@@ -29,7 +29,7 @@ public class MyMathTest {
     }
 
     @Test
-    public void x2() {
+    public void reducingTest() {
         Fraction f = new Fraction(1,1);
         MyMath mm = new MyMath();
         Fraction reduced = mm.reduce(f);
