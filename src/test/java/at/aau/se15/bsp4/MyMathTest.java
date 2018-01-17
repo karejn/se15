@@ -12,15 +12,20 @@ public class MyMathTest {
         Double x=10d;
         Double y=5d;
         MyMath myMath = new MyMath();
-        Double add=myMath.add(x,y);
-        Double sub=myMath.sub(x,y);
-        Double mul=myMath.mul(x,y);
-        Double div=myMath.div(x,y);
 
+        Double add=myMath.add(x,y);
         assertTrue(add.equals(15d));
+
+        Double sub=myMath.sub(x,y);
         assertTrue(sub.equals(5d));
+
+        Double mul=myMath.mul(x,y);
         assertTrue(mul.equals(50d));
+
+        Double div=myMath.div(x,y);
         assertTrue(div.equals(2d));
+
+
     }
 
     @Test
