@@ -17,10 +17,10 @@ public class MyMathTest {
         Double mul=myMath.mul(x,y);
         Double div=myMath.div(x,y);
 
-        assertTrue(add.equals(new Double(15)));
-        assertTrue(sub.equals(new Double(5)));
-        assertTrue(mul.equals(new Double(50)));
-        assertTrue(div.equals(new Double(2)));
+        assertTrue(add.equals(15d));
+        assertTrue(sub.equals(5d));
+        assertTrue(mul.equals(50d));
+        assertTrue(div.equals(2d));
     }
 
     @Test
