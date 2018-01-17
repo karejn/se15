@@ -36,25 +36,25 @@ public class MyMathTest {
         assertEquals(new Integer(1),reduced.getNumerator());
         assertEquals(new Integer(1),reduced.getDenumerator());
 
-        f = new Fraction(10,6);
-        mm = new MyMath();
+        f.setNumerator(10);
+        f.setDenumerator(6);
         reduced = mm.reduce(f);
         assertEquals(new Integer(5),reduced.getNumerator());
         assertEquals(new Integer(3),reduced.getDenumerator());
 
-        f = new Fraction(10,5);
-        mm = new MyMath();
+        f.setNumerator(10);
+        f.setDenumerator(5);
         reduced = mm.reduce(f);
         assertEquals(new Integer(2),reduced.getNumerator());
         assertEquals(new Integer(1),reduced.getDenumerator());
 
-        f = new Fraction(10,5);
-        mm = new MyMath();
+        f.setNumerator(10);
+        f.setDenumerator(5);
         Double aDouble = mm.toDouble(f);
         assertEquals(new Double(2),aDouble);
 
-        f = new Fraction(10,4);
-        mm = new MyMath();
+        f.setNumerator(10);
+        f.setDenumerator(4);
         aDouble = mm.toDouble(f);
         assertEquals(new Double(2.5d),aDouble);
     }
