@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class MyMathTest {
 
     @Test
-    public void x() {
+    public void basicMathCalculationTest() {
         Double x=10d;
         Double y=5d;
         MyMath myMath = new MyMath();
